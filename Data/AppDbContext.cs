@@ -8,6 +8,6 @@ namespace ApiNet6.Data
         public DbSet<TodoModel> Todos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-            => options.UseSqlite("conectionstring");
+            => options.UseSqlServer("Data Source=DESKTOP-462GL8K;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
     }
 }
